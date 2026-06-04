@@ -1,0 +1,2050 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G5M1ZPJW29"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G5M1ZPJW29');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Colour Picker – Free Online Image Colour Picker | RDJ Publishers</title>
+  <meta name="description" content="RDJ Publishers — free online colour picker. Upload any image & click to instantly extract HEX, RGB & HSL colour values. No upload, no sign-up, works entirely in your browser. 100% free & private." />
+  <meta name="keywords" content="pick colour online, colour picker website, online image colour picker, color picker online from image, colour picker online, colour picker image, colour picker image online, online colour picker, image colour picker, pick color from image, hex color picker, rgb color picker, hsl color picker, eyedropper tool online, color extractor from image, free color picker no upload, colour picker no sign up, get hex code from image, color code picker online, pixel color picker, image color extractor free, color picker for designers, RDJ Publishers, rdjpublishers">
+  <meta name="author" content="RDJ Publishers" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://rdjpublishers.com/Colour-Picker/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rdjpublishers.com/Colour-Picker/" />
+  <meta property="og:title" content="Colour Picker – Free Online Image Colour Picker | RDJ Publishers" />
+  <meta property="og:description" content="Upload any image and click to instantly get HEX, RGB and HSL colour values. No uploads to servers, no sign-ups. 100% free and private." />
+  <meta property="og:image" content="https://rdjpublishers.com/Colour-Picker/Colour.png" />
+  <meta property="og:site_name" content="RDJ Publishers" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Colour Picker – Free Online Image Colour Picker | RDJ Publishers" />
+  <meta name="twitter:description" content="Upload any image and click to instantly get HEX, RGB and HSL values. Free, private, browser-based." />
+  <meta name="twitter:image" content="https://rdjpublishers.com/Colour-Picker/Colour.png" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Colour Picker",
+    "url": "https://rdjpublishers.com/Colour-Picker/",
+    "description": "Free browser-based colour picker tool. Upload any image and click to instantly extract HEX, RGB, and HSL colour values.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires a modern web browser with HTML5 Canvas support",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "featureList": [
+      "Pick colour from any image by clicking",
+      "HEX colour value output",
+      "RGB colour value output",
+      "HSL colour value output",
+      "One-click copy to clipboard",
+      "Colour history / recent picks",
+      "Magnifier zoom for precision picking",
+      "100% browser-based, no server upload"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "RDJ Publishers",
+      "url": "https://rdjpublishers.com/",
+      "email": "rdjpublishers@gmail.com"
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema for rich snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I pick a colour from an image?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Upload your image using the drag-and-drop zone or file browser, then hover over any part of the image and click to instantly capture the colour. The HEX, RGB, and HSL values will appear in the results panel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the colour picker free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, the RDJ Publishers Colour Picker is completely free with no sign-up required. It runs entirely in your browser so no image data is ever sent to a server."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What colour formats does the picker output?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The tool outputs HEX (e.g. #FF5733), RGB (e.g. rgb(255, 87, 51)), and HSL (e.g. hsl(11, 100%, 60%)) values for every colour you pick."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="Logo.png" />
+  <link rel="apple-touch-icon" href="Logo.png" />
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8728382905346597" crossorigin="anonymous"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+<style>
+/* ===== RESET & TOKENS ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --sidebar-w: 240px;
+  --sidebar-bg: #080d1a;
+  --sidebar-border: rgba(255,255,255,0.06);
+  --accent: #6366f1;
+  --accent-2: #8b5cf6;
+  --accent-glow: rgba(99,102,241,0.22);
+  --accent-dark: #4f46e5;
+  --accent-light: #eef2ff;
+  --bg: #f5f6fb;
+  --surface: #ffffff;
+  --surface2: #f0f2f9;
+  --surface3: #e6eaf5;
+  --text: #0d1426;
+  --text-muted: #5a6480;
+  --text-faint: #9ca3af;
+  --border: #e0e4f0;
+  --border-strong: #c5cce0;
+  --danger: #ef4444;
+  --success: #22c55e;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.05), 0 4px 20px rgba(0,0,0,0.06);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.10);
+  --shadow-glow: 0 0 0 3px var(--accent-glow);
+  --font-head: 'Sora', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --transition: 0.22s cubic-bezier(0.4,0,0.2,1);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  overflow-x: hidden;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  position: fixed;
+  top: 0; left: 0;
+  width: var(--sidebar-w);
+  height: 100vh;
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--sidebar-border);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.sidebar-logo {
+  padding: 1.5rem 1.25rem 1.25rem;
+  border-bottom: 1px solid var(--sidebar-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+  margin-left: 6px;
+}
+
+.sidebar-logo img {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: rgba(255,255,255,0.06);
+}
+
+.logo-text { display: flex; flex-direction: column; }
+
+.logo-name {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.logo-tagline {
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.sidebar-close-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.65);
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0.25rem 0.4rem;
+  border-radius: 8px;
+  transition: all var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-close-btn:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  .sidebar-close-btn { display: none; }
+}
+
+.sidebar-nav {
+  padding: 1rem 0.75rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.nav-label {
+  font-size: 0.63rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.2);
+  padding: 0.5rem 0.6rem 0.35rem;
+  font-family: var(--font-head);
+  font-weight: 600;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0.8rem;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  color: rgba(255,255,255,0.45);
+  font: 500 0.875rem var(--font-body);
+  cursor: pointer;
+  transition: all var(--transition);
+  text-align: left;
+  width: 100%;
+  letter-spacing: 0.01em;
+}
+
+.nav-btn:hover {
+  background: rgba(255,255,255,0.07);
+  color: rgba(255,255,255,0.9);
+}
+
+.nav-btn.active {
+  background: rgba(99,102,241,0.18);
+  color: #a5b4fc;
+  font-weight: 600;
+  border: 1px solid rgba(99,102,241,0.25);
+}
+
+.nav-btn.active .nav-icon { opacity: 1; }
+
+.nav-icon {
+  width: 17px;
+  height: 17px;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.sidebar-footer {
+  padding: 1rem 1.25rem;
+  border-top: 1px solid var(--sidebar-border);
+}
+
+.sidebar-footer p {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.2);
+  line-height: 1.6;
+}
+
+.sidebar-footer a {
+  color: rgba(255,255,255,0.35);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.sidebar-footer a:hover { color: #a5b4fc; }
+
+/* ===== HAMBURGER ===== */
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 0.85rem;
+  left: 0.85rem;
+  z-index: 200;
+  background: var(--sidebar-bg);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 9px;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  transition: background var(--transition);
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger:hover { background: rgba(99,102,241,0.3); }
+.hamburger svg { display: block; }
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 90;
+  backdrop-filter: blur(4px);
+}
+
+/* ===== MAIN CONTENT ===== */
+.main {
+  margin-left: var(--sidebar-w);
+  flex: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== PAGE SECTIONS ===== */
+.page {
+  display: none;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+  animation: fadeInPage 0.3s ease forwards;
+}
+.page.active { display: flex; }
+
+@keyframes fadeInPage {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== TOP BAR ===== */
+.topbar {
+  background: var(--surface);
+  border-bottom: 0.5px solid var(--border);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 1px 0 var(--border);
+  backdrop-filter: blur(8px);
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-left: 2.5rem;
+}
+
+.topbar-logo-img {
+  height: 45px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.topbar-title {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.topbar-badge {
+  background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+  color: #065f46;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.22rem 0.75rem;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+/* ===== TOOL PAGE ===== */
+.tool-wrap {
+  padding: 1.75rem 2rem 2rem;
+  flex: 1;
+}
+
+.page-header {
+  margin-bottom: 1.5rem;
+}
+
+.page-header h1 {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: -0.035em;
+  color: var(--text);
+  line-height: 1.2;
+  background: linear-gradient(135deg, var(--text) 40%, var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-header p {
+  color: var(--text-muted);
+  font-size: 0.925rem;
+  margin-top: 0.4rem;
+}
+
+/* Privacy notice */
+.privacy-notice {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+  border: 1px solid #bbf7d0;
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.83rem;
+  color: #166534;
+  font-weight: 500;
+}
+
+.privacy-notice svg { flex-shrink: 0; }
+
+/* Layout */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: box-shadow var(--transition);
+}
+
+.panel:hover { box-shadow: var(--shadow-md); }
+
+.panel h2 {
+  font-family: var(--font-head);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.1rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.panel h2 .panel-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent-light), #e0e7ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* Drop zone */
+.drop-zone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed var(--border-strong);
+  border-radius: 12px;
+  padding: 1.75rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  min-height: 130px;
+  background: linear-gradient(135deg, var(--surface2), #f0f2fb);
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.drop-zone::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(99,102,241,0.05), rgba(139,92,246,0.05));
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.drop-zone:hover::before,
+.drop-zone.dragover::before { opacity: 1; }
+
+.drop-zone:hover,
+.drop-zone.dragover {
+  border-color: var(--accent);
+  background: var(--accent-light);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-1px);
+}
+
+.drop-zone-icon {
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+  opacity: 0.75;
+  transition: transform var(--transition);
+}
+
+.drop-zone:hover .drop-zone-icon { transform: translateY(-3px); opacity: 1; }
+.drop-zone strong { font-size: 0.875rem; color: var(--text); display: block; margin-bottom: 0.25rem; font-weight: 600; }
+.drop-zone small { color: var(--text-faint); font-size: 0.78rem; }
+
+/* ===== CANVAS / IMAGE AREA ===== */
+.canvas-wrap {
+  margin-top: 1rem;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--surface2), #edf0f8);
+  position: relative;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.canvas-wrap.has-image {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-glow);
+  cursor: crosshair;
+}
+
+.canvas-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-faint);
+  font-size: 0.85rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+.canvas-placeholder svg { opacity: 0.35; }
+
+#pickerCanvas {
+  max-width: 100%;
+  max-height: 420px;
+  display: none;
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+  image-rendering: auto;
+}
+
+/* Magnifier */
+.magnifier {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.4) inset;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 10;
+  display: none;
+  transform: translate(-50%, -50%);
+}
+
+#magnifierCanvas {
+  position: absolute;
+  top: 0; left: 0;
+  image-rendering: pixelated;
+}
+
+/* Crosshair ring on magnifier */
+.magnifier::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  pointer-events: none;
+  z-index: 3;
+}
+
+.magnifier-dot {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 8px; height: 8px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+  z-index: 4;
+  pointer-events: none;
+}
+
+.canvas-hint {
+  display: none;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.65rem;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.canvas-hint.show { display: flex; }
+.canvas-hint svg { flex-shrink: 0; color: var(--accent); }
+
+/* ===== COLOUR RESULT ===== */
+.colour-swatch-large {
+  width: 100%;
+  height: 110px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  margin-bottom: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(135deg, var(--surface2), var(--surface3));
+}
+
+.colour-swatch-large.active {
+  border-color: transparent;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+.swatch-empty-hint {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--text-faint);
+  font-size: 0.83rem;
+}
+
+.swatch-empty-hint svg { opacity: 0.5; }
+
+.swatch-label {
+  display: none;
+  position: absolute;
+  bottom: 0.65rem;
+  right: 0.65rem;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  font-family: var(--font-head);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  letter-spacing: 0.04em;
+}
+
+.colour-swatch-large.active .swatch-empty-hint { display: none; }
+.colour-swatch-large.active .swatch-label { display: block; }
+
+/* Colour values grid */
+.colour-values {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.colour-value-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  transition: border-color var(--transition), background var(--transition), transform var(--transition);
+}
+
+.colour-value-row:hover {
+  border-color: var(--accent);
+  background: var(--accent-light);
+  transform: translateX(2px);
+}
+
+.colour-value-label {
+  font-family: var(--font-head);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  width: 36px;
+  flex-shrink: 0;
+}
+
+.colour-value-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text);
+  flex: 1;
+  letter-spacing: 0.02em;
+  word-break: break-all;
+}
+
+.colour-value-text.placeholder {
+  color: var(--text-faint);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.83rem;
+}
+
+.copy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1.5px solid var(--border);
+  border-radius: 7px;
+  padding: 0.32rem 0.55rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all var(--transition);
+  font-size: 0.72rem;
+  font-weight: 600;
+  gap: 0.3rem;
+  font-family: var(--font-body);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.copy-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.copy-btn.copied {
+  background: var(--success);
+  border-color: var(--success);
+  color: #fff;
+}
+
+/* Copy all button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border);
+  font: 600 0.855rem var(--font-body);
+  cursor: pointer;
+  background: var(--surface);
+  color: var(--text-muted);
+  transition: all var(--transition);
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99,102,241,0.12);
+}
+
+.btn:disabled { opacity: 0.38; cursor: not-allowed; }
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 3px 12px rgba(99,102,241,0.35);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--accent-dark), #7c3aed);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(99,102,241,0.45);
+  transform: translateY(-2px);
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+/* ===== COLOUR HISTORY ===== */
+.history-section {
+  margin-top: 1.5rem;
+}
+
+.history-label {
+  font-family: var(--font-head);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.history-clear-btn {
+  background: none;
+  border: none;
+  font: 600 0.7rem var(--font-body);
+  color: var(--text-faint);
+  cursor: pointer;
+  transition: color 0.15s;
+  padding: 0;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.history-clear-btn:hover { color: var(--danger); }
+
+.history-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.history-swatch {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition);
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+  animation: swatchIn 0.2s ease forwards;
+}
+
+@keyframes swatchIn {
+  from { opacity: 0; transform: scale(0.7); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.history-swatch:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.history-swatch-tooltip {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text);
+  color: #fff;
+  font-size: 0.68rem;
+  font-family: 'Courier New', monospace;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 10;
+}
+
+.history-swatch:hover .history-swatch-tooltip { opacity: 1; }
+
+.history-empty {
+  font-size: 0.82rem;
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+/* ===== ABOUT PAGE ===== */
+.about-wrap {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-hero { margin-bottom: 2rem; }
+
+.about-hero h1 {
+  font-family: var(--font-head);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  color: var(--text);
+  margin-bottom: 0.65rem;
+}
+
+.about-hero h1 span {
+  background: linear-gradient(135deg, var(--accent), #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-hero p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.35rem;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.about-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(99,102,241,0.2);
+}
+
+.about-card-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.9rem;
+  font-size: 1.25rem;
+}
+
+.icon-blue { background: linear-gradient(135deg, #eff6ff, #e0e7ff); }
+.icon-purple { background: linear-gradient(135deg, #f5f3ff, #ede9fe); }
+.icon-green { background: linear-gradient(135deg, #f0fdf4, #dcfce7); }
+.icon-orange { background: linear-gradient(135deg, #fff7ed, #fde68a); }
+
+.about-card h3 {
+  font-family: var(--font-head);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.01em;
+}
+
+.about-card p {
+  font-size: 0.855rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.privacy-banner {
+  background: linear-gradient(135deg, #080d1a 0%, #12193a 100%);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+.privacy-banner-icon {
+  width: 46px;
+  height: 46px;
+  background: rgba(99,102,241,0.2);
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.privacy-banner h3 {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.privacy-banner p {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.65;
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact-wrap {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-hero { margin-bottom: 2rem; }
+
+.contact-hero h1 {
+  font-family: var(--font-head);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  color: var(--text);
+  margin-bottom: 0.65rem;
+}
+
+.contact-hero p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-info-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+}
+
+.contact-info-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: rgba(99,102,241,0.2);
+}
+
+.contact-info-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, var(--accent-light), #e0e7ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-info-card h4 {
+  font-family: var(--font-head);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 0.2rem;
+}
+
+.contact-info-card p, .contact-info-card a {
+  font-size: 0.875rem;
+  color: var(--text);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.contact-info-card a:hover { color: var(--accent); }
+
+.contact-form-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+}
+
+.contact-form-wrap h2 {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+  color: var(--text);
+}
+
+.field { margin-bottom: 0.85rem; }
+label.field-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border);
+  font: inherit;
+  font-size: 0.9rem;
+  background: var(--surface);
+  color: var(--text);
+  transition: border-color var(--transition), box-shadow var(--transition);
+  outline: none;
+  appearance: none;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-glow);
+}
+
+textarea { resize: vertical; min-height: 120px; }
+
+.form-success {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 0.75rem;
+}
+
+.form-success.show { display: flex; }
+
+.success-icon {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.form-success h3 {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.form-success p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  max-width: 300px;
+}
+
+.error { color: var(--danger); font-size: 0.82rem; min-height: 1.2rem; margin-top: 0.25rem; }
+
+/* Submit button */
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  font: 600 0.9rem var(--font-body);
+  cursor: pointer;
+  transition: all var(--transition);
+  box-shadow: 0 3px 12px rgba(99,102,241,0.35);
+  width: 100%;
+  margin-top: 0.25rem;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--accent-dark), #7c3aed);
+  box-shadow: 0 6px 20px rgba(99,102,241,0.45);
+  transform: translateY(-2px);
+}
+
+.submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  .sidebar.open {
+    transform: translateX(0);
+    box-shadow: 4px 0 24px rgba(0,0,0,0.3);
+  }
+  .sidebar-overlay.open { display: block; }
+  .hamburger { display: flex; }
+  .main { margin-left: 0; }
+  .topbar { padding: 0.9rem 1rem 0.9rem 3.5rem; }
+  .topbar-left { margin-left: 0; }
+  .tool-wrap { padding: 1rem; }
+  .layout { grid-template-columns: 1fr; }
+  .about-wrap, .contact-wrap { padding: 1rem; }
+  .about-cards { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .page-header h1 { font-size: 1.35rem; }
+  .about-hero h1, .contact-hero h1 { font-size: 1.5rem; }
+  .privacy-banner { flex-direction: column; gap: 0.75rem; }
+}
+
+@media (max-width: 480px) {
+  .topbar-badge { display: none; }
+  .colour-swatch-large { height: 80px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar Overlay -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar" role="navigation" aria-label="Main navigation">
+  <div class="sidebar-logo">
+    <a class="logo-wrap" href="https://rdjpublishers.com/" target="_blank" rel="noopener">
+      <img src="Logo.png" alt="RDJ Publishers logo" />
+      <div class="logo-text">
+        <span class="logo-name">RDJ Publishers</span>
+        <span class="logo-tagline">Free Web Tools</span>
+      </div>
+    </a>
+    <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Close navigation">✕</button>
+  </div>
+
+  <nav class="sidebar-nav">
+    <div class="nav-label">Tool</div>
+    <button class="nav-btn active" id="nav-home" onclick="showPage('home')" aria-current="page">
+      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+      </svg>
+      Colour Picker
+    </button>
+    <div class="nav-label" style="margin-top:0.5rem;">Info</div>
+    <button class="nav-btn" id="nav-about" onclick="showPage('about')">
+      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+      </svg>
+      About
+    </button>
+    <button class="nav-btn" id="nav-contact" onclick="showPage('contact')">
+      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+      </svg>
+      Contact
+    </button>
+  </nav>
+
+  <div class="sidebar-footer">
+    <p>© 2025 <a href="https://rdjpublishers.com/" target="_blank" rel="noopener">RDJ Publishers</a><br>Free tools. No sign-ups. Ever.</p>
+  </div>
+</aside>
+
+<!-- Hamburger -->
+<button class="hamburger" id="hamburgerBtn" aria-label="Open navigation" aria-expanded="false">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+    <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+  </svg>
+</button>
+
+<!-- Main -->
+<main class="main">
+
+  <!-- ===== HOME / TOOL PAGE ===== -->
+  <section class="page active" id="page-home" aria-label="Colour Picker Tool">
+    <div class="topbar" role="banner">
+      <div class="topbar-left">
+        <img src="Colour.png" alt="Colour Picker icon" class="topbar-logo-img" />
+        <span class="topbar-title">Colour Picker</span>
+      </div>
+      <span class="topbar-badge">100% Free</span>
+    </div>
+
+    <div class="tool-wrap">
+      <div class="page-header">
+        <h1>Image Colour Picker</h1>
+        <p>Upload any image, hover to preview, and click to capture precise HEX, RGB &amp; HSL values instantly.</p>
+      </div>
+
+      <div class="privacy-notice" role="note">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Your images never leave your device — all processing happens entirely in your browser.
+      </div>
+
+      <div class="layout">
+        <!-- Left panel: Image Upload -->
+        <div class="panel">
+          <h2>
+            <span class="panel-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </span>
+            Upload Image
+          </h2>
+
+          <!-- Drop zone -->
+          <div class="drop-zone" id="dropZone" role="button" tabindex="0" aria-label="Upload image – drag and drop or click to browse">
+            <div class="drop-zone-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <strong>Drag &amp; drop your image here</strong>
+            <small>or click to browse — JPG, PNG, WebP, GIF, SVG, AVIF</small>
+            <input type="file" id="fileInput" accept="image/*" style="position:absolute;inset:0;opacity:0;cursor:pointer;" aria-label="Upload image file" />
+          </div>
+
+          <!-- Canvas area -->
+          <div class="canvas-wrap" id="canvasWrap">
+            <div class="canvas-placeholder" id="canvasPlaceholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Your image will appear here</span>
+            </div>
+            <canvas id="pickerCanvas" role="img" aria-label="Uploaded image – click anywhere to pick a colour"></canvas>
+            <div class="magnifier" id="magnifier">
+              <canvas id="magnifierCanvas" width="100" height="100"></canvas>
+              <div class="magnifier-dot"></div>
+            </div>
+          </div>
+
+          <div class="canvas-hint" id="canvasHint">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            <span>Hover over the image to preview colour — click to capture it</span>
+          </div>
+        </div>
+
+        <!-- Right panel: Colour Output -->
+        <div class="panel">
+          <h2>
+            <span class="panel-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            </span>
+            Colour Values
+          </h2>
+
+          <!-- Large colour swatch -->
+          <div class="colour-swatch-large" id="swatchLarge">
+            <div class="swatch-empty-hint" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+              <span>Pick a colour to see the swatch</span>
+            </div>
+            <span class="swatch-label" id="swatchLabel" aria-live="polite"></span>
+          </div>
+
+          <!-- Colour value rows -->
+          <div class="colour-values" role="list" aria-label="Colour format values">
+            <!-- HEX -->
+            <div class="colour-value-row" role="listitem">
+              <span class="colour-value-label">HEX</span>
+              <span class="colour-value-text placeholder" id="hexValue" aria-label="HEX colour value">—</span>
+              <button class="copy-btn" id="copyHex" onclick="copyValue('hex')" aria-label="Copy HEX value" disabled>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy
+              </button>
+            </div>
+            <!-- RGB -->
+            <div class="colour-value-row" role="listitem">
+              <span class="colour-value-label">RGB</span>
+              <span class="colour-value-text placeholder" id="rgbValue" aria-label="RGB colour value">—</span>
+              <button class="copy-btn" id="copyRgb" onclick="copyValue('rgb')" aria-label="Copy RGB value" disabled>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy
+              </button>
+            </div>
+            <!-- HSL -->
+            <div class="colour-value-row" role="listitem">
+              <span class="colour-value-label">HSL</span>
+              <span class="colour-value-text placeholder" id="hslValue" aria-label="HSL colour value">—</span>
+              <button class="copy-btn" id="copyHsl" onclick="copyValue('hsl')" aria-label="Copy HSL value" disabled>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy
+              </button>
+            </div>
+          </div>
+
+          <!-- Action buttons -->
+          <div class="btn-group">
+            <button class="btn btn-primary" id="copyAllBtn" onclick="copyAll()" disabled aria-label="Copy all colour values">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Copy All Values
+            </button>
+            <button class="btn" id="clearBtn" onclick="clearImage()" disabled aria-label="Clear image and reset">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+              Clear Image
+            </button>
+          </div>
+
+          <!-- Colour History -->
+          <div class="history-section">
+            <div class="history-label">
+              <span>Recent Picks</span>
+              <button class="history-clear-btn" id="historyClearBtn" onclick="clearHistory()" aria-label="Clear colour history">Clear all</button>
+            </div>
+            <div class="history-swatches" id="historySwatches" role="list" aria-label="Colour history"></div>
+            <p class="history-empty" id="historyEmpty" aria-live="polite">Click the image to start picking colours.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEO Content -->
+      <div style="margin-top:2.5rem;">
+        <div class="panel">
+          <h2>
+            <span class="panel-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </span>
+            How to Use the Colour Picker
+          </h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;">
+            <div style="background:var(--surface2);border-radius:10px;padding:1rem;">
+              <div style="font-size:1.35rem;margin-bottom:0.5rem;">📁</div>
+              <div style="font-family:var(--font-head);font-size:0.85rem;font-weight:700;margin-bottom:0.3rem;color:var(--text);">1. Upload Your Image</div>
+              <div style="font-size:0.82rem;color:var(--text-muted);line-height:1.6;">Drag and drop or click to browse. Supports JPG, PNG, WebP, GIF, SVG and AVIF formats up to any size.</div>
+            </div>
+            <div style="background:var(--surface2);border-radius:10px;padding:1rem;">
+              <div style="font-size:1.35rem;margin-bottom:0.5rem;">🔍</div>
+              <div style="font-family:var(--font-head);font-size:0.85rem;font-weight:700;margin-bottom:0.3rem;color:var(--text);">2. Hover to Preview</div>
+              <div style="font-size:0.82rem;color:var(--text-muted);line-height:1.6;">Move your cursor over the image. A magnifier lens zooms in for pixel-perfect colour selection.</div>
+            </div>
+            <div style="background:var(--surface2);border-radius:10px;padding:1rem;">
+              <div style="font-size:1.35rem;margin-bottom:0.5rem;">🎯</div>
+              <div style="font-family:var(--font-head);font-size:0.85rem;font-weight:700;margin-bottom:0.3rem;color:var(--text);">3. Click to Capture</div>
+              <div style="font-size:0.82rem;color:var(--text-muted);line-height:1.6;">Click anywhere on the image to instantly capture the colour. HEX, RGB, and HSL values appear immediately.</div>
+            </div>
+            <div style="background:var(--surface2);border-radius:10px;padding:1rem;">
+              <div style="font-size:1.35rem;margin-bottom:0.5rem;">📋</div>
+              <div style="font-family:var(--font-head);font-size:0.85rem;font-weight:700;margin-bottom:0.3rem;color:var(--text);">4. Copy &amp; Use</div>
+              <div style="font-size:0.82rem;color:var(--text-muted);line-height:1.6;">Copy individual values or all formats at once. Previously picked colours are saved in the history swatches below.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /tool-wrap -->
+  </section>
+
+  <!-- ===== ABOUT PAGE ===== -->
+  <section class="page" id="page-about" aria-label="About RDJ Publishers">
+    <div class="topbar" role="banner">
+      <div class="topbar-left">
+        <img src="Logo.png" alt="RDJ Publishers logo" class="topbar-logo-img" />
+        <span class="topbar-title">About Us</span>
+      </div>
+      <span class="topbar-badge">100% Free</span>
+    </div>
+
+    <div class="about-wrap">
+      <div class="about-hero">
+        <h1>Crafting Tools <span>People Actually Use</span></h1>
+        <p>RDJ Publishers is an independent web studio dedicated to building free, fast, and privacy-respecting tools for students, professionals, and everyday users – with zero sign-ups and zero costs.</p>
+      </div>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="about-card-icon icon-blue" aria-hidden="true">🏢</div>
+          <h3>Who We Are</h3>
+          <p>Independent web publishing studio building practical, free-to-use web apps for everyone. Our tools are lightweight, browser-based, and designed to work on any device.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon icon-purple" aria-hidden="true">🎯</div>
+          <h3>Our Mission</h3>
+          <p>Democratise access to productivity tools with browser-based utilities that work on any device, any data plan. No downloads, no installs — just open and use.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon icon-green" aria-hidden="true">✅</div>
+          <h3>Always Free</h3>
+          <p>No hidden paywalls, no freemium limits, no forced sign-ups. All our tools are supported by non-intrusive advertising so they remain completely free to use forever.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon icon-orange" aria-hidden="true">🚀</div>
+          <h3>Always Evolving</h3>
+          <p>We regularly add new tools and improve existing ones. We read every feature request and bug report — your feedback directly shapes what we build next.</p>
+        </div>
+      </div>
+
+      <div class="privacy-banner" role="note">
+        <div class="privacy-banner-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a5b4fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h3>Your Privacy is Guaranteed</h3>
+          <p>All tools process your data entirely inside your browser. Nothing is ever sent to any server, stored, or seen by anyone else. Your images, text, and files stay private — always.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT PAGE ===== -->
+  <section class="page" id="page-contact" aria-label="Contact RDJ Publishers">
+    <div class="topbar" role="banner">
+      <div class="topbar-left">
+        <img src="Logo.png" alt="RDJ Publishers logo" class="topbar-logo-img" />
+        <span class="topbar-title">Contact Us</span>
+      </div>
+      <span class="topbar-badge">100% Free</span>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-hero">
+        <h1>We'd Love to Hear From You</h1>
+        <p>Questions, bug reports, tool requests, or just say hello – we read every message and aim to reply within 24–48 hours.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-info-card">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:rdjpublishers@gmail.com">rdjpublishers@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div>
+              <h4>Website</h4>
+              <a href="https://rdjpublishers.com/" target="_blank" rel="noopener">rdjpublishers.com</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h4>Response Time</h4>
+              <p>Usually within 24–48 hours</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <h2>Send Us a Message</h2>
+          <form id="contactForm">
+            <input type="hidden" name="access_key" value="b8e73ebb-4cd4-45ae-aa44-5a9725856c03" />
+            <input type="hidden" name="subject" value="New Contact Message – Colour Picker Tool" />
+            <input type="hidden" name="from_name" value="RDJ Publishers – Colour Picker" />
+            <div class="field">
+              <label class="field-label" for="contactName">Your Name <span style="color:var(--danger)">*</span></label>
+              <input type="text" id="contactName" name="name" required placeholder="e.g. Jane Smith" autocomplete="name" />
+            </div>
+            <div class="field">
+              <label class="field-label" for="contactEmail">Email Address <span style="color:var(--danger)">*</span></label>
+              <input type="email" id="contactEmail" name="email" required placeholder="you@example.com" autocomplete="email" />
+            </div>
+            <div class="field">
+              <label class="field-label" for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" name="subject_line" placeholder="e.g. Feature request, bug report…" />
+            </div>
+            <div class="field">
+              <label class="field-label" for="contactMessage">Message <span style="color:var(--danger)">*</span></label>
+              <textarea id="contactMessage" name="message" required placeholder="Tell us how we can help…"></textarea>
+            </div>
+            <div class="error" id="formError" role="alert" aria-live="assertive"></div>
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+            <div class="success-icon" aria-hidden="true">✅</div>
+            <h3>Message Sent!</h3>
+            <p>Thanks for reaching out. We'll get back to you within 24–48 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+/* ===== SIDEBAR ===== */
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('sidebarOverlay');
+const hamburger = document.getElementById('hamburgerBtn');
+const closeBtn = document.getElementById('sidebarCloseBtn');
+
+function updateSidebarUI() {
+  const isOpen = sidebar.classList.contains('open');
+  if (window.innerWidth <= 768) {
+    hamburger.style.display = isOpen ? 'none' : 'flex';
+    hamburger.setAttribute('aria-expanded', isOpen);
+  } else {
+    hamburger.style.display = 'none';
+  }
+}
+
+function openSidebar() { sidebar.classList.add('open'); overlay.classList.add('open'); updateSidebarUI(); }
+function closeSidebar() { sidebar.classList.remove('open'); overlay.classList.remove('open'); updateSidebarUI(); }
+
+hamburger.addEventListener('click', openSidebar);
+closeBtn.addEventListener('click', closeSidebar);
+overlay.addEventListener('click', closeSidebar);
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) { sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+  updateSidebarUI();
+});
+
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => { b.classList.remove('active'); b.removeAttribute('aria-current'); });
+  document.getElementById('page-' + name).classList.add('active');
+  const navBtn = document.getElementById('nav-' + name);
+  if (navBtn) { navBtn.classList.add('active'); navBtn.setAttribute('aria-current', 'page'); }
+  closeSidebar();
+  window.scrollTo(0, 0);
+}
+
+/* ===== COLOUR PICKER LOGIC ===== */
+const fileInput   = document.getElementById('fileInput');
+const dropZone    = document.getElementById('dropZone');
+const canvasWrap  = document.getElementById('canvasWrap');
+const canvas      = document.getElementById('pickerCanvas');
+const placeholder = document.getElementById('canvasPlaceholder');
+const magnifier   = document.getElementById('magnifier');
+const magCanvas   = document.getElementById('magnifierCanvas');
+const hint        = document.getElementById('canvasHint');
+
+const swatchLarge = document.getElementById('swatchLarge');
+const swatchLabel = document.getElementById('swatchLabel');
+const hexValue    = document.getElementById('hexValue');
+const rgbValue    = document.getElementById('rgbValue');
+const hslValue    = document.getElementById('hslValue');
+const copyHex     = document.getElementById('copyHex');
+const copyRgb     = document.getElementById('copyRgb');
+const copyHsl     = document.getElementById('copyHsl');
+const copyAllBtn  = document.getElementById('copyAllBtn');
+const clearBtn    = document.getElementById('clearBtn');
+const historyEl   = document.getElementById('historySwatches');
+const historyEmpty= document.getElementById('historyEmpty');
+
+const ctx    = canvas.getContext('2d', { willReadFrequently: true });
+const magCtx = magCanvas.getContext('2d', { willReadFrequently: true });
+
+const ZOOM  = 5;
+const ZOOM_RADIUS = 10;
+let   img   = null;
+let   colourHistory = [];
+let   currentColour = null;
+
+/* Load image */
+function loadImage(file) {
+  if (!file || !file.type.startsWith('image/')) { alert('Please upload a valid image file.'); return; }
+  const reader = new FileReader();
+  reader.onload = e => {
+    const image = new Image();
+    image.onload = () => {
+      img = image;
+      canvas.width  = image.width;
+      canvas.height = image.height;
+      ctx.drawImage(image, 0, 0);
+      canvas.style.display = 'block';
+      placeholder.style.display = 'none';
+      canvasWrap.classList.add('has-image');
+      hint.classList.add('show');
+      clearBtn.disabled = false;
+    };
+    image.src = e.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+
+fileInput.addEventListener('change', e => { if (e.target.files[0]) loadImage(e.target.files[0]); });
+dropZone.addEventListener('click', () => fileInput.click());
+dropZone.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fileInput.click(); } });
+['dragenter','dragover'].forEach(ev => dropZone.addEventListener(ev, e => { e.preventDefault(); dropZone.classList.add('dragover'); }));
+['dragleave','drop'].forEach(ev => dropZone.addEventListener(ev, e => { e.preventDefault(); dropZone.classList.remove('dragover'); }));
+dropZone.addEventListener('drop', e => { const f = e.dataTransfer.files[0]; if (f) loadImage(f); });
+
+/* Get pixel position on canvas (accounting for CSS scaling) */
+function getCanvasPos(e) {
+  const rect   = canvas.getBoundingClientRect();
+  const scaleX = canvas.width  / rect.width;
+  const scaleY = canvas.height / rect.height;
+  let clientX, clientY;
+  if (e.touches) { clientX = e.touches[0].clientX; clientY = e.touches[0].clientY; }
+  else           { clientX = e.clientX; clientY = e.clientY; }
+  return {
+    x: Math.round((clientX - rect.left) * scaleX),
+    y: Math.round((clientY - rect.top)  * scaleY)
+  };
+}
+
+/* Draw magnifier */
+function drawMagnifier(px, py) {
+  const size = ZOOM_RADIUS * 2 + 1;
+  magCanvas.width  = 100;
+  magCanvas.height = 100;
+  magCtx.imageSmoothingEnabled = false;
+  const srcX = px - ZOOM_RADIUS;
+  const srcY = py - ZOOM_RADIUS;
+  magCtx.drawImage(canvas, srcX, srcY, size, size, 0, 0, 100, 100);
+  /* centre pixel highlight */
+  const cx = 50 - (100 / size) / 2;
+  const cy = 50 - (100 / size) / 2;
+  const pw = 100 / size;
+  magCtx.strokeStyle = 'rgba(255,255,255,0.85)';
+  magCtx.lineWidth = 1.5;
+  magCtx.strokeRect(cx, cy, pw, pw);
+}
+
+/* Position magnifier element on screen */
+function positionMagnifier(e) {
+  const canvasRect = canvas.getBoundingClientRect();
+  const wrapRect   = canvasWrap.getBoundingClientRect();
+  let clientX, clientY;
+  if (e.touches) { clientX = e.touches[0].clientX; clientY = e.touches[0].clientY; }
+  else           { clientX = e.clientX; clientY = e.clientY; }
+
+  const relX = clientX - wrapRect.left;
+  const relY = clientY - wrapRect.top;
+
+  const offset = 60;
+  let mLeft = relX + offset;
+  let mTop  = relY - offset;
+  if (mLeft + 50 > wrapRect.width)  mLeft = relX - offset;
+  if (mTop  - 50 < 0)               mTop  = relY + offset;
+  magnifier.style.left = mLeft + 'px';
+  magnifier.style.top  = mTop  + 'px';
+}
+
+/* Colour extraction helpers */
+function rgbToHex(r, g, b) {
+  return '#' + [r, g, b].map(v => v.toString(16).padStart(2, '0')).join('').toUpperCase();
+}
+
+function rgbToHsl(r, g, b) {
+  r /= 255; g /= 255; b /= 255;
+  const max = Math.max(r, g, b), min = Math.min(r, g, b);
+  let h, s, l = (max + min) / 2;
+  if (max === min) { h = s = 0; }
+  else {
+    const d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+    switch (max) {
+      case r: h = ((g - b) / d + (g < b ? 6 : 0)) / 6; break;
+      case g: h = ((b - r) / d + 2) / 6; break;
+      case b: h = ((r - g) / d + 4) / 6; break;
+    }
+  }
+  return { h: Math.round(h * 360), s: Math.round(s * 100), l: Math.round(l * 100) };
+}
+
+function getLuminance(r, g, b) { return 0.299 * r + 0.587 * g + 0.114 * b; }
+
+/* Pick colour from canvas coordinates */
+function pickColour(px, py) {
+  if (!img) return null;
+  const data = ctx.getImageData(Math.max(0, px), Math.max(0, py), 1, 1).data;
+  const r = data[0], g = data[1], b = data[2];
+  const hex = rgbToHex(r, g, b);
+  const hsl = rgbToHsl(r, g, b);
+  return { r, g, b, hex, hsl };
+}
+
+/* Update result UI */
+function setColour(col) {
+  currentColour = col;
+  /* Swatch */
+  swatchLarge.style.background = col.hex;
+  swatchLarge.classList.add('active');
+  swatchLabel.textContent = col.hex;
+  /* Adjust label text colour for contrast */
+  swatchLabel.style.background = getLuminance(col.r, col.g, col.b) > 140
+    ? 'rgba(0,0,0,0.45)' : 'rgba(0,0,0,0.55)';
+
+  /* Values */
+  hexValue.textContent = col.hex;
+  hexValue.classList.remove('placeholder');
+  rgbValue.textContent = `rgb(${col.r}, ${col.g}, ${col.b})`;
+  rgbValue.classList.remove('placeholder');
+  hslValue.textContent = `hsl(${col.hsl.h}, ${col.hsl.s}%, ${col.hsl.l}%)`;
+  hslValue.classList.remove('placeholder');
+
+  copyHex.disabled = false;
+  copyRgb.disabled = false;
+  copyHsl.disabled = false;
+  copyAllBtn.disabled = false;
+
+  /* History */
+  addToHistory(col);
+}
+
+/* Mouse / touch events on canvas */
+canvas.addEventListener('mousemove', e => {
+  if (!img) return;
+  const { x, y } = getCanvasPos(e);
+  const col = pickColour(x, y);
+  if (!col) return;
+  drawMagnifier(x, y);
+  positionMagnifier(e);
+  magnifier.style.display = 'block';
+  /* Live swatch preview */
+  swatchLarge.style.background = col.hex;
+});
+
+canvas.addEventListener('mouseleave', () => {
+  magnifier.style.display = 'none';
+  if (currentColour) swatchLarge.style.background = currentColour.hex;
+  else { swatchLarge.style.background = ''; swatchLarge.classList.remove('active'); }
+});
+
+canvas.addEventListener('click', e => {
+  if (!img) return;
+  const { x, y } = getCanvasPos(e);
+  const col = pickColour(x, y);
+  if (col) setColour(col);
+});
+
+/* Touch support */
+canvas.addEventListener('touchmove', e => {
+  e.preventDefault();
+  if (!img) return;
+  const { x, y } = getCanvasPos(e);
+  const col = pickColour(x, y);
+  if (!col) return;
+  drawMagnifier(x, y);
+  positionMagnifier(e);
+  magnifier.style.display = 'block';
+  swatchLarge.style.background = col.hex;
+}, { passive: false });
+
+canvas.addEventListener('touchend', e => {
+  e.preventDefault();
+  magnifier.style.display = 'none';
+  if (!img) return;
+  const touch = e.changedTouches[0];
+  const rect  = canvas.getBoundingClientRect();
+  const scaleX = canvas.width / rect.width;
+  const scaleY = canvas.height / rect.height;
+  const x = Math.round((touch.clientX - rect.left) * scaleX);
+  const y = Math.round((touch.clientY - rect.top)  * scaleY);
+  const col = pickColour(x, y);
+  if (col) setColour(col);
+}, { passive: false });
+
+/* Copy helpers */
+function copyValue(type) {
+  if (!currentColour) return;
+  let text = '';
+  let btn;
+  if (type === 'hex') { text = currentColour.hex; btn = copyHex; }
+  else if (type === 'rgb') { text = `rgb(${currentColour.r}, ${currentColour.g}, ${currentColour.b})`; btn = copyRgb; }
+  else if (type === 'hsl') { text = `hsl(${currentColour.hsl.h}, ${currentColour.hsl.s}%, ${currentColour.hsl.l}%)`; btn = copyHsl; }
+  navigator.clipboard.writeText(text).then(() => {
+    btn.classList.add('copied');
+    btn.textContent = '✓ Copied';
+    setTimeout(() => { btn.classList.remove('copied'); btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>Copy`; }, 1800);
+  }).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.cssText = 'position:fixed;opacity:0;';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    btn.classList.add('copied');
+    btn.textContent = '✓ Copied';
+    setTimeout(() => { btn.classList.remove('copied'); btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>Copy`; }, 1800);
+  });
+}
+
+function copyAll() {
+  if (!currentColour) return;
+  const text =
+    `HEX: ${currentColour.hex}\nRGB: rgb(${currentColour.r}, ${currentColour.g}, ${currentColour.b})\nHSL: hsl(${currentColour.hsl.h}, ${currentColour.hsl.s}%, ${currentColour.hsl.l}%)`;
+  navigator.clipboard.writeText(text).then(() => {
+    copyAllBtn.textContent = '✓ All Copied!';
+    setTimeout(() => { copyAllBtn.innerHTML = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>Copy All Values`; }, 2000);
+  }).catch(() => {
+    const ta = document.createElement('textarea'); ta.value = text; ta.style.cssText = 'position:fixed;opacity:0;'; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+  });
+}
+
+function clearImage() {
+  img = null;
+  currentColour = null;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  canvas.style.display = 'none';
+  placeholder.style.display = 'flex';
+  canvasWrap.classList.remove('has-image');
+  hint.classList.remove('show');
+  clearBtn.disabled = true;
+  copyAllBtn.disabled = true;
+  copyHex.disabled = true; copyRgb.disabled = true; copyHsl.disabled = true;
+  hexValue.textContent = '—'; hexValue.classList.add('placeholder');
+  rgbValue.textContent = '—'; rgbValue.classList.add('placeholder');
+  hslValue.textContent = '—'; hslValue.classList.add('placeholder');
+  swatchLarge.style.background = '';
+  swatchLarge.classList.remove('active');
+  swatchLabel.textContent = '';
+  fileInput.value = '';
+}
+
+/* Colour history */
+function addToHistory(col) {
+  const duplicate = colourHistory.findIndex(c => c.hex === col.hex);
+  if (duplicate !== -1) colourHistory.splice(duplicate, 1);
+  colourHistory.unshift({ ...col });
+  if (colourHistory.length > 20) colourHistory.pop();
+  renderHistory();
+}
+
+function renderHistory() {
+  historyEl.innerHTML = '';
+  if (colourHistory.length === 0) {
+    historyEmpty.style.display = 'block';
+    return;
+  }
+  historyEmpty.style.display = 'none';
+  colourHistory.forEach(col => {
+    const swatch = document.createElement('div');
+    swatch.className = 'history-swatch';
+    swatch.style.background = col.hex;
+    swatch.setAttribute('role', 'listitem');
+    swatch.setAttribute('tabindex', '0');
+    swatch.setAttribute('aria-label', `Pick colour ${col.hex}`);
+    swatch.innerHTML = `<span class="history-swatch-tooltip">${col.hex}</span>`;
+    swatch.addEventListener('click', () => setColour(col));
+    swatch.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setColour(col); } });
+    historyEl.appendChild(swatch);
+  });
+}
+
+function clearHistory() {
+  colourHistory = [];
+  renderHistory();
+}
+
+/* ===== CONTACT FORM ===== */
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  const errEl = document.getElementById('formError');
+  errEl.textContent = '';
+  btn.disabled = true;
+  btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="animation:spin .8s linear infinite"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg>Sending…`;
+  try {
+    const data = Object.fromEntries(new FormData(this));
+    const res  = await fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) });
+    const json = await res.json();
+    if (json.success) {
+      this.style.display = 'none';
+      document.getElementById('formSuccess').classList.add('show');
+    } else {
+      errEl.textContent = json.message || 'Something went wrong. Please try again.';
+      btn.disabled = false;
+      btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>Send Message`;
+    }
+  } catch {
+    errEl.textContent = 'Network error. Please check your connection and try again.';
+    btn.disabled = false;
+    btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>Send Message`;
+  }
+});
+
+/* ===== KEYDOWN SHORTCUT – ESC closes sidebar ===== */
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSidebar(); });
+
+/* ===== SPINNER KEYFRAME ===== */
+const spinStyle = document.createElement('style');
+spinStyle.textContent = `@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`;
+document.head.appendChild(spinStyle);
+
+updateSidebarUI();
+</script>
+
+</body>
+</html>
