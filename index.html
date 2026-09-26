@@ -355,7 +355,6 @@ body {
   display: none;
   flex-direction: column;
   flex: 1;
-  min-height: 100vh;
   animation: fadeInPage 0.3s ease forwards;
 }
 .page.active { display: flex; }
@@ -1227,6 +1226,162 @@ textarea { resize: vertical; min-height: 120px; }
 
 .error { color: var(--danger); font-size: 0.82rem; min-height: 1.2rem; margin-top: 0.25rem; }
 
+/* ===== SITE FOOTER ===== */
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 2.25rem 2rem 1.5rem;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.site-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.site-footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.site-footer-brand .logo-wrap {
+  margin-left: 0;
+  display: inline-flex;
+}
+
+.site-footer-brand .logo-wrap img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: rgba(99,102,241,0.08);
+  flex-shrink: 0;
+}
+
+.site-footer-brand .logo-name { color: var(--text); }
+.site-footer-brand .logo-tagline { color: var(--text-muted); }
+
+.site-footer-tagline {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  max-width: 360px;
+}
+
+.site-footer-col h4 {
+  font-family: var(--font-head);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+}
+
+.site-footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.site-footer-col a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.site-footer-col a:hover {
+  color: var(--accent);
+}
+
+.site-footer-col .ext-icon {
+  width: 10px;
+  height: 10px;
+  opacity: 0.45;
+  flex-shrink: 0;
+}
+
+.site-footer-bottom {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.site-footer-copy {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.site-footer-disclosure {
+  font-size: 0.75rem;
+  color: var(--text-faint);
+  margin: 0;
+  line-height: 1.65;
+  max-width: 56ch;
+}
+
+.site-footer-disclosure a {
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-decoration-color: var(--border-strong);
+  text-underline-offset: 2px;
+}
+
+.site-footer-disclosure a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+/* Sidebar legal links (compact legal nav inside the dark sidebar) */
+.sidebar-legal-links {
+  list-style: none;
+  padding: 0.75rem 0 0;
+  margin: 0.75rem 0 0;
+  border-top: 1px solid var(--sidebar-border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.7rem;
+  font-size: 0.68rem;
+}
+
+.sidebar-legal-links li { display: inline-flex; align-items: center; }
+.sidebar-legal-links li + li::before {
+  content: '·';
+  color: rgba(255,255,255,0.18);
+  margin-right: 0.7rem;
+  margin-left: -0.4rem;
+}
+
+.sidebar-legal-links a {
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  transition: color 0.15s;
+  letter-spacing: 0.01em;
+}
+
+.sidebar-legal-links a:hover { color: #a5b4fc; }
+
 /* Submit button */
 .submit-btn {
   display: inline-flex;
@@ -1276,6 +1431,10 @@ textarea { resize: vertical; min-height: 120px; }
   .page-header h1 { font-size: 1.35rem; }
   .about-hero h1, .contact-hero h1 { font-size: 1.5rem; }
   .privacy-banner { flex-direction: column; gap: 0.75rem; }
+  .site-footer { padding: 1.5rem 1rem 1.25rem; }
+  .site-footer-grid { grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 1.25rem; }
+  .site-footer-tagline { max-width: none; }
+  .site-footer-bottom { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
 }
 
 @media (max-width: 480px) {
@@ -1327,6 +1486,14 @@ textarea { resize: vertical; min-height: 120px; }
 
   <div class="sidebar-footer">
     <p>© 2025 <a href="https://rdjpublishers.com/" target="_blank" rel="noopener">RDJ Publishers</a><br>Free tools. No sign-ups. Ever.</p>
+    <ul class="sidebar-legal-links" aria-label="Legal and information links">
+      <li><a href="https://rdjpublishers.com/about.html" target="_blank" rel="noopener">About</a></li>
+      <li><a href="https://rdjpublishers.com/contact.html" target="_blank" rel="noopener">Contact</a></li>
+      <li><a href="https://rdjpublishers.com/privacy-policy.html" target="_blank" rel="noopener">Privacy</a></li>
+      <li><a href="https://rdjpublishers.com/terms.html" target="_blank" rel="noopener">Terms</a></li>
+      <li><a href="https://rdjpublishers.com/disclaimer.html" target="_blank" rel="noopener">Disclaimer</a></li>
+      <li><a href="https://rdjpublishers.com/sitemap.xml" target="_blank" rel="noopener">Sitemap</a></li>
+    </ul>
   </div>
 </aside>
 
@@ -1555,7 +1722,7 @@ textarea { resize: vertical; min-height: 120px; }
         </div>
         <div>
           <h3>Your Privacy is Guaranteed</h3>
-          <p>All tools process your data entirely inside your browser. Nothing is ever sent to any server, stored, or seen by anyone else. Your images, text, and files stay private — always.</p>
+          <p>All tools process your data entirely inside your browser. Nothing is ever sent to any server, stored, or seen by anyone else. Your images, text, and files stay private — always. We display ads via Google AdSense, which may set cookies — see our <a href="https://rdjpublishers.com/privacy-policy.html" target="_blank" rel="noopener" style="color:#a5b4fc;text-decoration:underline;text-underline-offset:2px;">Privacy Policy</a> for details.</p>
         </div>
       </div>
     </div>
@@ -1645,6 +1812,55 @@ textarea { resize: vertical; min-height: 120px; }
       </div>
     </div>
   </section>
+
+  <!-- ===== SITE FOOTER (permanent, AdSense-ready) ===== -->
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-grid">
+
+      <div class="site-footer-brand">
+        <a class="logo-wrap" href="https://rdjpublishers.com/" target="_blank" rel="noopener">
+          <img src="Logo.png" alt="RDJ Publishers logo" />
+          <div class="logo-text">
+            <span class="logo-name">RDJ Publishers</span>
+            <span class="logo-tagline">Free Web Tools</span>
+          </div>
+        </a>
+        <p class="site-footer-tagline">
+          Free, fast, privacy-respecting browser tools — built for everyone, supported by non-intrusive advertising so they stay free forever.
+        </p>
+      </div>
+
+      <nav class="site-footer-col" aria-label="Legal and information">
+        <h4>Legal & Info</h4>
+        <ul>
+          <li><a href="https://rdjpublishers.com/about.html" target="_blank" rel="noopener">About<svg class="ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7"/><path d="M21 3l-9 9"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg></a></li>
+          <li><a href="https://rdjpublishers.com/contact.html" target="_blank" rel="noopener">Contact<svg class="ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7"/><path d="M21 3l-9 9"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg></a></li>
+          <li><a href="https://rdjpublishers.com/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy<svg class="ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7"/><path d="M21 3l-9 9"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg></a></li>
+          <li><a href="https://rdjpublishers.com/terms.html" target="_blank" rel="noopener">Terms & Conditions<svg class="ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7"/><path d="M21 3l-9 9"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg></a></li>
+          <li><a href="https://rdjpublishers.com/disclaimer.html" target="_blank" rel="noopener">Disclaimer<svg class="ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7"/><path d="M21 3l-9 9"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg></a></li>
+          <li><a href="https://rdjpublishers.com/sitemap.xml" target="_blank" rel="noopener">Sitemap<svg class="ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7"/><path d="M21 3l-9 9"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg></a></li>
+        </ul>
+      </nav>
+
+      <nav class="site-footer-col" aria-label="Contact and connect">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:rdjpublishers@gmail.com">rdjpublishers@gmail.com</a></li>
+          <li><a href="https://rdjpublishers.com/" target="_blank" rel="noopener">rdjpublishers.com<svg class="ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7"/><path d="M21 3l-9 9"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg></a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="site-footer-bottom">
+      <p class="site-footer-copy">© 2025 RDJ Publishers · All rights reserved.</p>
+      <p class="site-footer-disclosure">
+        This site may display ads served by Google AdSense. Google, as a third-party vendor, uses cookies to serve ads based on a user's prior visits to this site or other sites. See our <a href="https://rdjpublishers.com/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a> for details on how we use cookies and advertising.
+      </p>
+    </div>
+  </div>
+</footer>
 
 </main>
 
