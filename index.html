@@ -1442,6 +1442,21 @@ textarea { resize: vertical; min-height: 120px; }
   .colour-swatch-large { height: 80px; }
 }
 </style>
+
+<style id="rdj-guide-css">
+.rdj-guide{max-width:860px;margin:2.5rem auto 2.5rem;padding:0 1.25rem;color:var(--text);font-family:var(--font-body);line-height:1.75}
+.rdj-guide h2{font-size:1.4rem;font-weight:700;margin:2rem 0 .75rem;color:var(--text)}
+.rdj-guide h2:first-child{margin-top:0}
+.rdj-guide h3{font-size:1.02rem;font-weight:700;margin:1.25rem 0 .35rem;color:var(--text)}
+.rdj-guide p{font-size:.94rem;color:var(--text-muted);margin:0 0 .85rem}
+.rdj-guide ul,.rdj-guide ol{margin:0 0 1rem 1.25rem;padding:0}
+.rdj-guide li{font-size:.93rem;color:var(--text-muted);margin-bottom:.4rem}
+.rdj-guide strong{color:var(--text)}
+.rdj-guide .rdj-faq{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:.9rem 1.15rem;margin-bottom:.7rem}
+.rdj-guide .rdj-faq h3{margin:0 0 .3rem;font-size:.97rem}
+.rdj-guide .rdj-faq p{margin:0}
+.rdj-guide a{color:var(--accent)}
+</style>
 </head>
 <body>
 
@@ -1673,6 +1688,47 @@ textarea { resize: vertical; min-height: 120px; }
           </div>
         </div>
       </div>
+
+
+      <!-- RDJ original guide content -->
+      <article class="rdj-guide" aria-labelledby="cp-guide-title">
+        <h2 id="cp-guide-title">About the Image Colour Picker</h2>
+        <p>The Image Colour Picker lets you pull an exact colour out of any picture. Load a photo, screenshot, logo or piece of artwork, move your cursor over it, and click the pixel you want. The tool reads that pixel and shows its value as HEX, RGB and HSL, ready to paste into a stylesheet, a design app or a document. It was built for people who need a precise colour match and do not want to install software or guess by eye.</p>
+        <p>The picker runs in your browser. The image is drawn onto a canvas on your own device and the colour is read from that canvas, so your picture is not uploaded to our servers. That makes it comfortable to use with unreleased designs, client mock-ups or personal photos.</p>
+
+        <h2>How the three colour formats differ</h2>
+        <p><strong>HEX</strong> is a six-digit code such as #FF5733. It is the format most web developers use in CSS, and it is compact and easy to copy. <strong>RGB</strong> writes the same colour as three numbers for red, green and blue, each from 0 to 255, for example rgb(255, 87, 51). It is handy in code that needs separate channel values. <strong>HSL</strong> describes hue, saturation and lightness, for example hsl(11, 100%, 60%). It is the friendliest format for adjusting a colour by hand, because you can make it lighter or duller by changing one number without disturbing the hue.</p>
+
+        <h2>Getting an accurate pick</h2>
+        <ul>
+          <li>Use the magnifier that appears as you hover, and aim at the centre of the area you want. Pixels near an edge can blend two colours together.</li>
+          <li>Photographs contain noise and gradients, so two neighbouring pixels can differ slightly. For a fair value of a surface, pick several points and compare them in Recent Picks.</li>
+          <li>Compressed JPG files can add small colour artefacts around text and sharp edges. A PNG or SVG source usually gives cleaner values.</li>
+          <li>Your screen and browser colour settings affect how a colour looks, but the values shown come from the image data itself.</li>
+        </ul>
+
+        <h2>Ideas for using it</h2>
+        <ul>
+          <li>Match a website or slide theme to the colours in a brand photo or logo.</li>
+          <li>Build a small palette from a landscape, a painting or a product shot by picking the dominant tones.</li>
+          <li>Find the exact shade used in a screenshot so you can reproduce it in code.</li>
+          <li>Check whether two images use the same colour by comparing their HEX values.</li>
+        </ul>
+
+        <h2>Supported files and limits</h2>
+        <p>You can load JPG, PNG, WebP, GIF, SVG and AVIF images. Very large images may load more slowly on older phones because the browser has to decode them in memory. If a file does not display, re-save it as PNG or JPG and try again.</p>
+
+        <h2>Troubleshooting</h2>
+        <p>If nothing happens when you click, make sure the image has finished loading and that you are clicking on the picture itself rather than the surrounding area. If the picked colour looks different from what you expected, remember that the tool reads a single pixel, not an average. Pick a few nearby points to get a representative value. If your browser blocks the file, check that it is a genuine image and not a renamed document.</p>
+
+        <h2>Frequently asked questions</h2>
+        <div class="rdj-faq"><h3>Is my image uploaded anywhere?</h3><p>No. The image is processed on your device in the browser. It is not sent to our servers. The page does load Google Analytics and Google AdSense scripts, which use cookies, as described in our <a href="https://rdjpublishers.com/privacy-policy.html">Privacy Policy</a>.</p></div>
+        <div class="rdj-faq"><h3>Can I pick a colour from a screenshot or a logo?</h3><p>Yes. Any supported image works, including screenshots, logos, photos and illustrations. Flat graphics such as PNG or SVG logos usually give the cleanest values.</p></div>
+        <div class="rdj-faq"><h3>Which format should I copy: HEX, RGB or HSL?</h3><p>Use HEX for most web work, RGB when your code needs separate channel values, and HSL when you want to adjust lightness or saturation by hand. You can copy each value on its own or all of them together.</p></div>
+        <div class="rdj-faq"><h3>Why does the value change slightly between nearby pixels?</h3><p>Photos contain noise, texture and lighting gradients, and JPG compression adds small variations. Pick several points and compare them, or use a flat-colour image for exact results.</p></div>
+        <div class="rdj-faq"><h3>Does it work on a phone?</h3><p>Yes. Tap the image to pick a colour. On small screens the hover magnifier is less useful, so tap carefully and check the swatch shown.</p></div>
+        <div class="rdj-faq"><h3>Is there a cost or a sign-up?</h3><p>No. The tool is free to use and needs no account.</p></div>
+      </article>
 
     </div><!-- /tool-wrap -->
   </section>
